@@ -6,9 +6,11 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
 import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
 import { EditRecipeComponent } from './recipes/edit-recipe/edit-recipe.component';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'/recipes',pathMatch:'full'},
+  {path:'auth',component:AuthComponent}
   /*{path:'recipes',component:recipes, children:[
     {path:'',component:RecipeStartComponent},
     {path:'new',component:EditRecipeComponent},

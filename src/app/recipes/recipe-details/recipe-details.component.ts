@@ -35,5 +35,4 @@ export class RecipeDetailsComponent {
     this.recipeService.deleteRecipe(this.id);
     this.route.navigate(['../'],{relativeTo:this.router})
   }
-
 }

@@ -20,6 +20,8 @@ import { recipesModule } from './recipes/recipes.module';
 import { shoppingListModule } from './shopping-list/shoppingList.module';
 import { shoppingListRoutingModule } from './shopping-list/shopping-list-routing.module';
 import { recipeRoutingModule } from './recipes/recipe-routing.module';
+import { AuthComponent } from './auth/auth.component';
+import { loadingSpinner } from './shared/loadding-spinner/loadding.spinner';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { recipeRoutingModule } from './recipes/recipe-routing.module';
    // ShoppingListComponent,
     //ShoppingEditComponent,
     dropdownDirective,
+    AuthComponent,
     //EditRecipeComponent
+    loadingSpinner
   ],
   imports: [
     BrowserModule,
